@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 <head>
     <meta charset="UTF-8">
     <title>Thymeleaf in action</title>
@@ -7,7 +8,7 @@
 <body>
 <div data-th-fragment="header">
     <h1>Thymeleaf in action</h1>
-    <a href="/users">首页this is header.html</a>
+    <a href="/users" th:href="@{~/users}">首页this is header.html</a>
 </div>
 </body>
 </html>
